@@ -1,0 +1,350 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/poly-texture.png");
+  background-color: #EF6F69;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+.credentials {
+  position: absolute;
+  top: 0;
+  padding: 21px;
+}
+
+.credentials p {
+  margin: 0px;
+}
+
+.half {
+  width:50%;
+  height:100%;
+  display:inline-block;
+  float:left;
+  position:relative;
+}
+
+/*
+Status bars
+*/
+.statusbar {
+  width: 100%;
+  height: 20px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center;
+  border-radius: 3px 3px 0 0;
+}
+
+.statusbar-ios {
+  background-image: url(../img/ios-statusbar.png);
+}
+
+.statusbar-android {
+  background-image: url(../img/android-statusbar.png);
+}
+
+/*
+iPhone styles
+https://codeconvey.com/css-iphone-6-mockup-design/
+*/
+.iphone {
+  box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #999, 0 0 30px 0px rgba(0, 0, 0, 0.7);
+  border: 5px solid #d9dbdc;
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 50px;
+  height: 877px;
+  width: 423px;
+  position: relative;
+  margin: 0 auto;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.iphone-top {
+  padding: 5px 110px 40px;
+  position: relative;
+}
+.iphone-top .speaker {
+  display: block;
+  width: 70px;
+  height: 6px;
+  margin: 0 auto;
+  border-radius: 6px;
+  background: #292728;
+}
+.iphone-top .camera {
+  display: block;
+  margin: 0 auto;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin-bottom: 13px;
+  background: #333;
+}
+.iphone-top .sensor {
+  display: block;
+  width: 15px;
+  height: 15px;
+  float: left;
+  background: #333;
+  margin-top: -5px;
+  border-radius: 50%;
+}
+
+.top-bar, .bottom-bar {
+  display: block;
+  width: 423px;
+  height: 15px;
+  border-left: 5px solid #BBB;
+  border-right: 5px solid #BBB;
+  position: absolute;
+  left: -5px;
+}
+
+.top-bar {
+  top: 65px;
+}
+
+.bottom-bar {
+  bottom: 65px;
+}
+
+.iphone-screen {
+  background: #eee;
+  border: 1px solid #fff;
+  height: 677px;
+  width: 375px;
+  margin: 0 auto;
+  border: 2px solid rgba(0, 0, 0, 0.9);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.iphone-screen img {
+  width: 100%;
+}
+
+.buttons .on-off, .buttons .up, .buttons .down, .buttons .sleep {
+  display: block;
+  background: #CCC;
+  position: absolute;
+  border-radius: 2px 0px 0px 2px;
+}
+.buttons .on-off {
+  height: 40px;
+  width: 3px;
+  top: 100px;
+  left: -8px;
+}
+.buttons .up, .buttons .down, .buttons .sleep {
+  height: 60px;
+  width: 5px;
+  left: -10px;
+}
+.buttons .up {
+  top: 170px;
+}
+.buttons .down {
+  top: 250px;
+}
+.buttons .sleep {
+  left: auto;
+  right: -10px;
+  top: 170px;
+  border-radius: 0px 2px 2px 0px;
+}
+
+.iphone-bottom {
+  padding: 10px 0 0;
+}
+.iphone-bottom span {
+  display: block;
+  margin: 0 auto;
+  width: 68px;
+  height: 68px;
+  background: #ccc;
+  border-radius: 50%;
+  background: -webkit-linear-gradient(315deg, #303233 0%, #b5b7b9 50%, #f0f2f2 69%, #303233 100%);
+  background: linear-gradient(135deg, #303233 0%, #b5b7b9 50%, #f0f2f2 69%, #303233 100%);
+  position: relative;
+}
+.iphone-bottom span:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+}
+
+.iframe-iphone{
+  height: 654px;
+  margin-top: -1px; /*workaround for iframe top-border*/
+}
+
+.iframe-android{
+  height: 620px;
+}
+
+/*
+Android Nexus styles
+http://codepen.io/subarna/pen/YWZjMV
+*/
+.device-android {
+ 
+  background: #000;
+  padding: 63px 15px 80px;
+  display: inline-block;
+  position: relative;
+  z-index:9;
+  box-shadow: 0px 0px 1.74px 0.26px rgba(0, 0, 0, 0.004),inset 0px 0px 0px 3px rgba(0, 0, 0, 0.004);
+  border-top-left-radius: 200px 30px;
+    border-top-right-radius: 200px 30px;
+    border-bottom-left-radius: 200px 30px;
+    border-bottom-right-radius: 200px 30px; 
+  border:2px solid #525053;
+ 
+}
+
+.screen-android {
+  height: 640px;
+  width: 360px;
+  background: #2f2f2f;
+}
+
+.camera-android {
+  background: rgb(56, 56, 56);
+  position: absolute;
+  left: 42px;
+  top: 26px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-image: -moz-linear-gradient( 114deg, rgb(132,129,132) 0%, rgb(14,14,14) 100%);
+  background-image: -webkit-linear-gradient( 114deg, rgb(132,129,132) 0%, rgb(14,14,14) 100%);
+  background-image: -ms-linear-gradient( 114deg, rgb(132,129,132) 0%, rgb(14,14,14) 100%);
+  box-shadow: 0.899px 0.438px 0px 0px rgba(0, 0, 0, 0.29),inset 1px 0px 0px 0px rgba(255, 255, 255, 0.26);
+}
+
+.speaker {
+  background: rgb(56, 56, 56);
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 26px;
+  background-image: -moz-linear-gradient( 114deg, rgb(132,129,132) 0%, rgb(14,14,14) 100%);
+  background-image: -webkit-linear-gradient( 114deg, rgb(132,129,132) 0%, rgb(14,14,14) 100%);
+  background-image: -ms-linear-gradient( 114deg, rgb(132,129,132) 0%, rgb(14,14,14) 100%);
+  box-shadow: 0.899px 0.438px 0px 0px rgba(0, 0, 0, 0.29),inset 1px 0px 0px 0px rgba(255, 255, 255, 0.26);
+ 
+}
+
+.camera:after {
+  content:"";
+  display:block;
+  border-radius: 50%;
+  background-color: rgb(125, 127, 144);
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 3px;
+  height: 3px;
+  z-index: 7;
+}
+
+
+.nav {
+  background: #000;
+  height: 48px;
+  width: 100%;
+  display: flex;
+  padding: 0 39px;
+  box-sizing: border-box;
+  opacity: 0.6;
+}
+
+.nav div {
+  border: 2px solid white;
+  height: 16px;
+  width: 16px;
+  margin: 16px 40px;
+  
+}
+
+.overview {
+  border-radius: 3px;
+}
+
+.home {
+  border-radius: 50%;
+}
+
+.nav .back {
+  border: none;
+  height: 17px;
+  width: 2px;
+  position: relative;
+  background: #fff;
+  
+}
+
+#back:before {
+      content: "";
+    position: absolute;
+    display: block;
+    height: 18px;
+    width: 2px;
+    transform: rotate(45deg);
+    background: #fff;
+    left: -7px;
+    top: -5px;
+    -webkit-transform: rotate(60deg);
+}
+
+#back:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 18px;
+  width: 2px;
+  transform: rotate(-60deg);
+  background: #fff;
+  left: -7px;
+  top: 3px;
+  -webkit-transform: rotate(-60deg);
+}
+
+.powerbutton {  
+  background:#000;
+  box-shadow: 0px 0px 0.87px 0.13px rgba(0, 0, 0, 0.58),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.14);
+  position: absolute;
+  left: 390px;
+  top: 101px;
+  width: 5px;
+  height: 51px;
+  z-index: 1;
+}
+
+
+.volumebutton {
+  background:#000; 
+  position: absolute;
+  left: -6px;
+  top: 152px;
+  width: 6px;
+  height: 110px;
+  z-index: 10;
+}
