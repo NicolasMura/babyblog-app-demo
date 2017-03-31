@@ -1,0 +1,3 @@
+[submodule "babyblog-app"]
+	path = babyblog-app
+	url = git@github.com:NicolasMura/babyblog-app.git
